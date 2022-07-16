@@ -1,0 +1,115 @@
+html{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Gantari', sans-serif;
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Lato', sans-serif;
+}
+
+#body{
+    background-image: url('/3D-Museum/img/stage-background-nen-toi.jpg');
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+}
+#S21ULTRA{
+    float: left;
+    height: 400px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 60px;
+}
+.infomation{
+    width: 100%;
+}
+h1{
+    margin-top: 150px;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+.specifications{
+    display: flex;
+}
+.monitor, .camera, .cpu, .rom, .battery, .origin{
+  display: none;
+}
+.paragraph{
+  width: 95%;
+}
+.paragraph p{
+  color: #ffffff;
+  line-height: 35px;
+  font-size: 20px;
+  margin-top: 90px;
+  padding-left: 30px;
+}
+.paragraph h5{
+  color: #ffffff;
+  margin-top: 150px;
+  text-align: center;
+}
+h3, h2{
+    color: aliceblue;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 50;
+}
+
+.btn {
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 auto;
+  height: 30px;
+  width: 10%;
+  outline: none;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.btn:before,
+.btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.btn:before {
+  border-color: #2D2D2D;
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+}
+
+.btn:after {
+  border-bottom-width: 2px;
+  border-color: #2D2D2D;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+}
+
+.btn:hover,
+.btn.hover {
+  background-color: #2D2D2D;
+}
+
+.btn:hover:before,
+.btn.hover:before,
+.btn:hover:after,
+.btn.hover:after {
+  height: 100%;
+  width: 100%;
+}

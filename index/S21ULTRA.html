@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/3D-Museum/css/styleInfo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Gantari:wght@200&family=Gentium+Book+Plus:wght@700&family=Lato&display=swap"
+        rel="stylesheet">
+    <title>3D Museum</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body id="body">
+    <div class="product">
+        <model-viewer id="S21ULTRA" src="/3D-Museum/3D/S21ULTRA.glb" camera-controls auto-rotate disable-zoom 
+            shadow-intensity="1" environment-image="neutral" alt="S21ULTRA"></model-viewer>
+    </div>
+
+    <div class="infomation">
+        <div class="name">
+            <h1>SAMSUNG GALAXY S21 ULTRA</h1>
+        </div>
+
+        <div class="specifications">
+            <div class="btn" id="monitor" onclick="openInfo('.monitor')">Màn hình</div>
+            <div class="btn" id="camera" onclick="openInfo('.camera')">Camera</div>
+            <div class="btn" id="cpu" onclick="openInfo('.cpu')">CPU</div>
+            <div class="btn" id="rom" onclick="openInfo('.rom')">ROM, RAM</div>
+            <div class="btn" id="battery" onclick="openInfo('.battery')">Pin</div>
+            <div class="btn" id="another" onclick="openInfo('.origin')">Khác</div>
+        </div>
+        <div class="paragraph">
+            <p>Được thiết kế với camera cắt viền độc đáo, tạo ra một cuộc cách mạng trong nhiếp ảnh 
+                – cho phép bạn quay video 8K chất lượng điện ảnh và chụp nhanh những bức ảnh tuyệt vời, tất cả trong một thao tác. 
+                Và với chipset nhanh nhất của Galaxy, loại kính mạnh nhất, 5G và pin dùng cả ngày, Ultra dễ dàng tạo nên tên tuổi của mình.</p>
+
+            <h5>*Hình ảnh sản phẩm 3D mang tính mô phỏng. Màu sắc và model máy có thể thay đổi tùy thuộc vào quốc gia và nhà cung cấp.</h5>
+        </div>
+        <div class="monitor">
+            <h3 class="monitor-content" >Loại màn hình: Dynamic AMOLED 2X</h3>
+            <h3 class="monitor-content" >Độ phân giải: 2K+ (1440 x 3200 Pixels)</h3>
+            <h3 class="monitor-content" >Kích thước: 6.8" - Tần số quét 120 Hz</h3>
+            <h3 class="monitor-content" >Mặt kính cảm ứng: Kính cường lực Corning Gorilla Glass Victus</h3>
+            <h3 class="monitor-content" ></h3>
+        </div>
+
+        <div class="camera">
+            <h2 class="camera-content">Camera sau</h2>
+            <h3 class="camera-content">Độ phân giải: Chính 108 MP & Phụ 12 MP, 10 MP, 10 MP</h3>
+            <h2 class="camera-content">Camera trước</h2>
+            <h3 class="camera-content">Độ phân giải: 40 MP</h3>
+        </div>
+
+        <div class="cpu">
+            <h3 class="cpu-content">Hệ điều hành: Android 11</h3>
+            <h3 class="cpu-content">Chip xử lý (CPU): Exynos 2100 8 nhân</h3>
+            <h3 class="cpu-content">Tốc độ xử lí: 1 nhân 2.9 GHz, 3 nhân 2.8 GHz & 4 nhân 2.2 GHz</h3>
+            <h3 class="cpu-content">Chip đồ họa (GPU): Mali-G78 MP14</h3>
+        </div>
+
+        <div class="rom ram">
+            <h3 class="rom-content">Bộ nhớ RAM: 12 GB</h3>
+            <h3 class="rom-content">Bộ nhớ trong: 128GB</h3>
+            <h3 class="rom-content">Khả dụng: 115GB</h3>
+        </div>
+
+        <div class="battery">
+            <h3 class = "battery-content">Dung lượng pin: 5000 mAh</h3>
+            <h3 class = "battery-content">Loại pin: Li-on</h3>
+            <h3 class = "battery-content">Sạc nhanh: 25W</h3>
+        </div>
+
+        <div class="origin">
+            <h3 class = "orgin-content">Nguồn gốc xuất xứ: Hàn Quốc</h3>
+            <h3 class = "orgin-content">Thời điểm ra mắt: 01/2021</h3>
+        </div>
+    </div>
+    <script src="/3D-Museum/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+</body>
+
+</html>

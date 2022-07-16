@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.nav{
+    display: block !important;
+}
+.nav-item{
+    padding: 0 30px;
+}
+#body{
+    background-image: url(/3D-Museum/img/background-introduce.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    background: rgba(0,0,0,0.4);;
+}
+.navbar-brand{
+    font-weight: 500;
+}
+.contact{
+    width: 50%;
+    margin: 10px auto;
+}
+h6:hover{
+    cursor: pointer;
+}

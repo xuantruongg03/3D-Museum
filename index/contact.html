@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/3D-Museum/css/styleHome.css">
+    <link rel="stylesheet" href="/3D-Museum/css/queries.css">
+    <title>3D-Museum</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .nav{
+            display: block !important;
+        }
+        .nav-item{
+            padding: 0 30px;
+        }
+        #body{
+            background-image: url(/3D-Museum/img/background-introduce.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navbar{
+            background: rgba(0,0,0,0.4);;
+        }
+        .navbar-brand{
+            font-weight: 500;
+        }
+        .contact{
+            width: 50%;
+            margin: 10px auto;
+        }
+        h6:hover{
+            cursor: pointer;
+        }
+    </style>
+    <!-- Reponsive styles-->
+    <style>
+
+    </style>
+</head>
+
+<body id="body">
+    <!-- navbar -->
+    <div class="nav">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/3D-Museum/home.html">3D-MUSEUM</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Danh mục</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Công nghệ</a>
+                            <a class="dropdown-item" href="#">Xe</a>
+                            <a class="dropdown-item" href="#">Văn hóa Việt Nam</a>
+                            <a class="dropdown-item" href="#">Khác</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/3D-Museum/index/introduce.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mục đích</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contact">
+        <div class="container-fluid mt-3">
+            <h4 class="mb-2">Thư góp ý</h4>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="myEmail">Họ tên</label>
+                        <input type="text" class="form-control" id="myName" placeholder="VD: Nguyễn Văn A">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="inputNumberPhone">Số điện thoại</label>
+                        <input type="tel" class="form-control" id="myNumberphone" placeholder="VD: 0981793202">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="myEmail">Email</label>
+                    <input type="Email" class="form-control" id="myEmail" placeholder="VD: TNN123@gmai.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="myTextarea">Nội dung góp ý</label>
+                    <textarea id="myTextarea" class="form-control" rows="7"
+                        placeholder="Nêu góp ý của bạn cho chúng tôi"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" onclick="sendMail(); return false">Gửi</button>
+            </form>
+            
+            <div class="form-group"  style = "margin-top: 30px;">
+                <h6 style = "color:aliceblue" onclick = "window.open('https://forms.gle/ecbixfgLHhb2u6A2A')">Hoặc góp ý theo đường link này</h6>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function sendMail() {
+            var link = 'mailto:lexuantruong098@gmail.com?subject=Message from ' + document.getElementById('myEmail').value
+                + '&body=' + document.getElementById('myTextarea').value;
+            window.location.href = link;
+            alert('Cảm ơn bạn đã góp ý với chúng tôi.');
+        }
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
