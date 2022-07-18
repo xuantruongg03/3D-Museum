@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/3D-Museum/css/queries.css">
+    <link rel="stylesheet" href="/3D-Museum/css/styleBackgroundAndNav.css">
+    <link rel="stylesheet" href="">
     <title>3D-Museum</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Animate -->
@@ -14,30 +16,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <style>
-        *{
-            box-sizing: border-box;
-        }
-        .nav{
-            display: block !important;
-        }
-        .nav-item{
-            padding: 0 30px;
-        }
-        #body{
+        .box{
             background-image: url(/3D-Museum/img/background-introduce.webp);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .navbar{
-            background: rgba(0,0,0,0.4);;
-        }
-        .navbar-brand{
-            font-weight: 500;
         }
         .content{
-            height: 100%;
-            width: 50%;
-            margin: 13% 25% 0;
+            width: 60%;
+            margin: 13% auto;
+            margin-bottom: 0;
         }
         .content p{
             color: #F5F0BB;
@@ -51,41 +36,22 @@
     </style>
     <!-- Reponsive styles-->
     <style>
-        @media only screen and (max-width: 767px){
-            .navbar{
-                height: 50px;
-            }
-            .navbar li a{
-                font-size: 15px;
-            }
-            .navbar li{
-                padding: 0 10px;
-            }
-        }
+        
         @media only screen and (max-width: 700px){
-            .navbar li a{
-            font-size: 14px;
-            }
-            .navbar li {
-                padding: 0 14px;
+            .content{
+                margin-top: 30%;
             }
             .content p{
-                font-size: 14px;
+                font-size: 18px;
             }
         }
         @media only screen and (max-width: 610px){
-            .navbar li a{
-            font-size: 14px;
-            }
-            .navbar li {
-                padding: 0 10px;
-            }
             .content{
                 margin-left: 20%;
                 margin-top: 25%;
             }
             .content p{
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     </style>
@@ -93,51 +59,53 @@
 
 <body id="body">
         <!-- navbar -->
-    <div class="nav">
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="/3D-Museum/index.html">3D-MUSEUM</a>
+    <div class="box">
+        <div class="nav">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="/3D-Museum/index.html">3D-MUSEUM</a>
+        
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Danh mục</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Công nghệ</a>
+                                <a class="dropdown-item" href="#">Xe</a>
+                                <a class="dropdown-item" href="#">Văn hóa Việt Nam</a>
+                                <a class="dropdown-item" href="#">Khác</a>
+                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/3D-Museum/index/introduce.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mục đích</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/3D-Museum/index/contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Danh mục</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Công nghệ</a>
-                            <a class="dropdown-item" href="#">Xe</a>
-                            <a class="dropdown-item" href="#">Văn hóa Việt Nam</a>
-                            <a class="dropdown-item" href="#">Khác</a>
-                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/3D-Museum/index/introduce.html">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mục đích</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/3D-Museum/index/contact.html">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- content -->
-    <div class="content " >
-        <p class="animate__animated animate__slideInDown"> 
-           Một sản phẩm đến từ 
-           <span><a  style="color: #3AB4F2; font-weight: 500" href="">TNN</a></span>
-            .Website được làm ra với mục đích để mọi người có cái nhìn khách quan về những vật dụng, biết thêm những thông tin cần thiết.
-            Hiện tại Website vẫn chưa được hoàn thiện, đội ngũ của chúng tôi vẫn đang cố gắng hoàn thiện nó từng ngày. Nếu có góp ý vui lòng
-            gửi thông tin về chúng tôi qua lựa chọn <span><a href="" style="color: 3AB4F2; font-weight: 500">Liên Hệ</a></span> trên thanh công cụ. Cảm ơn bạn đã ghé thăm. Chúc bạn một ngày tôt lành!
-        </p>
+        <!-- content -->
+        <div class="content " >
+            <p class="animate__animated animate__slideInDown"> 
+               Một dự án đến từ 
+               <span><a  style="color: #3AB4F2; font-weight: 500" href="">TNN</a></span>
+                .Website được làm ra với mục đích để mọi người có cái nhìn tổng quan về những sản phẩm, biết thêm những thông tin cần thiết.
+                Hiện tại Website vẫn chưa được hoàn thiện, đội ngũ của chúng tôi vẫn đang cố gắng hoàn thiện nó từng ngày. Nếu có góp ý vui lòng
+                gửi thông tin về chúng tôi qua lựa chọn <span><a href="/3D-Museum/index/contact.html" style="color: 3AB4F2; font-weight: 500">Liên Hệ</a></span> trên thanh công cụ. Cảm ơn bạn đã ghé thăm. Chúc bạn một ngày tôt lành!
+            </p>
+        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

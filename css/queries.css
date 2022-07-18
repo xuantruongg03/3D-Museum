@@ -35,13 +35,7 @@
     .navbar li {
         padding: 0 10px;
     }
-    .sub{
-        margin-left: 20%;
-        margin-top: 25%;
-    }
-    .sub p{
-        font-size: 16px;
-    }
+    
 }
  
 /* Small phones from 0 to 480px; */
